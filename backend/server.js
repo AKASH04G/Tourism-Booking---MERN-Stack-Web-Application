@@ -12,7 +12,7 @@ app.use(express.json());
 
 const userRoutes = require('./routes/userRoutes');
 const trainRoutes = require('./routes/train');
-const trainBookingRoutes = require('./routes/trainBooking');
+const trainBookingRoutes = require('./routes/TrainBooking');
 const cityPackagesRoutes = require('./routes/cityPackages');
 const PackageBooking=require('./routes/PackageBooking')
 const busRoutes = require('./routes/bus');

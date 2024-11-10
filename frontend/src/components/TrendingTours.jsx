@@ -8,7 +8,7 @@ const TrendingTours = ({ onSelectTour }) => {
     const tours = [
         { name: 'Golden Triangle Tour', image: '../images/GoldenTriangleTour.jpeg', price: '$500'
         },
-        { name: 'Kerala Backwaters', image: '../images/keralaBackwater.jpg', price: '$300'
+        { name: 'Kerala Backwaters', image: '../images/KeralaBackwater.jpg', price: '$300'
         },
         { name: 'Goa Beaches', image: '../images/GoaBeaches.jpg', price: '$400'
         },
@@ -16,11 +16,11 @@ const TrendingTours = ({ onSelectTour }) => {
         },
         { name: 'Himalayan Adventure', image: '/images/Himalayan.jpeg', price: '$600'
         },
-        { name: 'Andaman Islands', image: '/images/andaman.webp', price: '$700'
+        { name: 'Andaman Islands', image: '/images/Andaman.webp', price: '$700'
         },
-        { name: 'South India Temple Tour', image: '/images/southIndia.jpg', price: '$350'
+        { name: 'South India Temple Tour', image: '/images/SouthIndia.jpg', price: '$350'
         },
-        { name: 'Northeast India Exploration', image: '/images/northeast.jpg', price: '$550'
+        { name: 'Northeast India Exploration', image: '/images/Northeast.jpg', price: '$550'
         },
     ];
 

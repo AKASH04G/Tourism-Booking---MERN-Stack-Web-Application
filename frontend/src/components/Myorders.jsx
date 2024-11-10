@@ -17,16 +17,16 @@ const MyOrders = () => {
                     return;
                 }
 
-                const hotelResponse = await axios.get('http://localhost:5000/api/hotelbooking/bookings', {
+                const hotelResponse = await axios.get('https://journeytime-backend.onrender.com/api/hotelbooking/bookings', {
                     headers: { Authorization: `Bearer ${token}` },
                 });
-                const packageResponse = await axios.get('http://localhost:5000/api/packageBookings/my-bookings', {
+                const packageResponse = await axios.get('https://journeytime-backend.onrender.com/api/packageBookings/my-bookings', {
                     headers: { Authorization: `Bearer ${token}` },
                 });
-                const trainResponse = await axios.get('http://localhost:5000/api/train-bookings/my-bookings', {
+                const trainResponse = await axios.get('https://journeytime-backend.onrender.com/api/train-bookings/my-bookings', {
                     headers: { Authorization: `Bearer ${token}` },
                 });
-                const busResponse = await axios.get('http://localhost:5000/api/bookings/', {
+                const busResponse = await axios.get('https://journeytime-backend.onrender.com/api/bookings/', {
                     headers: { Authorization: `Bearer ${token}` },
                 });
 
@@ -37,7 +37,7 @@ const MyOrders = () => {
                     buses: busResponse.data || []
                 });
 
-                const userResponse = await axios.get('http://localhost:5000/api/users/me', {
+                const userResponse = await axios.get('https://journeytime-backend.onrender.com/api/users/me', {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 setUserName(userResponse.data.name || 'User');

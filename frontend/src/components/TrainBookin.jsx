@@ -25,7 +25,7 @@ const TrainBooking = () => {
         setError(null);
 
         try {
-            const response = await fetch(`http://localhost:5000/api/train-bookings/trains?from=${from}&to=${to}&date=${date}&classFilter=${classFilter}`);
+            const response = await fetch(`https://journeytime-backend.onrender.com/api/train-bookings/trains?from=${from}&to=${to}&date=${date}&classFilter=${classFilter}`);
             const contentType = response.headers.get('content-type');
 
             if (!response.ok) {

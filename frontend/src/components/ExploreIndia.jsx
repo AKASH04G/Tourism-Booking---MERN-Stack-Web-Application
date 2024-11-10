@@ -7,7 +7,7 @@ const ExploreIndia = () => {
     const exploreIndiaData = [
         { title: 'Agra', image: '/images/agra.jpg', description: 'Explore the royal heritage of Agra.'
         },
-        { title: 'Kerala', image: './images/kerala.jpg', description: 'Experience the serene backwaters of Kerala.'
+        { title: 'Kerala', image: '/images/kerala.jpg', description: 'Experience the serene backwaters of Kerala.'
         },
         { title: 'Himalayas', image: '/images/Himalayan.jpeg', description: 'Discover the beautiful hills of the Himalayas.'
         }

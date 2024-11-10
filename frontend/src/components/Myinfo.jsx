@@ -19,7 +19,7 @@ const MyInfo = () => {
     useEffect(() => {
         const fetchUser = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/users/me', {
+                const response = await axios.get('https://journeytime-backend.onrender.com/api/users/me', {
                     headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
                 });
                 setUser(response.data);
@@ -46,7 +46,7 @@ const MyInfo = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.put('http://localhost:5000/api/users/profile', formData, {
+            const response = await axios.put('https://journeytime-backend.onrender.com/api/users/profile', formData, {
                 headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
             });
             setUser(response.data);

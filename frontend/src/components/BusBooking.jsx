@@ -35,7 +35,7 @@ const BusBooking = () => {
         setError(null);
 
         try {
-            const response = await fetch('http://localhost:5000/api/buses'); // Update with your backend API URL
+            const response = await fetch('https://journeytime-backend.onrender.com/api/buses'); // Update with your backend API URL
             if (!response.ok) {
                 throw new Error('Failed to fetch buses');
             }

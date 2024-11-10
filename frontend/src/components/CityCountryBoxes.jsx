@@ -7,7 +7,7 @@ const CityCountryBoxes = ({ onCitySelect }) => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch('http://localhost:5000/api/cities/')
+        fetch('https://journeytime-backend.onrender.com/api/cities/')
             .then(response => response.json())
             .then(data => setCities(data)) // Adjust according to the actual response
             .catch(error => console.error('Error fetching city data:', error));

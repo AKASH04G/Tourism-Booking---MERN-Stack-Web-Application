@@ -13,7 +13,7 @@ const CityPackages = () => {
 
     useEffect(() => {
         if (cityName) {
-            fetch(`http://localhost:5000/api/cities/${cityName}`)
+            fetch(`https://journeytime-backend.onrender.com/api/cities/${cityName}`)
                 .then(response => response.json())
                 .then(data => {
                     setPackages(data.packages); // Ensure this matches your API response

@@ -1,0 +1,169 @@
+.bus-booking-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+.search-section {
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.search-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1em;
+    align-self: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.results-section {
+    width: 65%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.results-section h3 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+}
+
+.bus-results ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bus-results li {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.bus-results li:hover {
+    transform: scale(1.02);
+}
+
+.bus-results li strong {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: block;
+    color: #333;
+}
+
+.bus-details {
+    display: flex;
+    flex-wrap: wrap; /* Allows the boxes to wrap to the next row if needed */
+    gap: 20px; /* Space between the boxes */
+    margin-top: 15px;
+}
+
+.class-details {
+    flex: 1 1 calc(33.333% - 20px); /* Three columns with space between */
+    padding: 15px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box; /* Ensures padding and borders are included in the width */
+}
+
+.class-details strong {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.class-details p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.book-now-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.book-now-button:hover {
+    background-color: #218838;
+}
+
+.no-results {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffe5e5;
+    color: #d9534f;
+    border: 1px solid #d9534f;
+    border-radius: 10px;
+    font-size: 1.1em;
+}
+
+.error {
+    color: #d9534f;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}

@@ -1,0 +1,60 @@
+/* src/components/TrendingTours.css */
+.trending-tours {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.trending-tours .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trending-tours .boxes {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 0 1rem;
+    scroll-behavior:auto; /* Optional for smooth scrolling */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.city-country-boxes .boxes::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+
+.trending-tours .tour-card {
+    flex: 0 0 300px; /* Adjust width as needed */
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.trending-tours .tour-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.trending-tours .tour-card img {
+    width: 100%;
+    height: 150px; /* Adjust height as needed */
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+.details-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.details-button:hover {
+    background-color: #0056b3;
+}
+

@@ -1,0 +1,65 @@
+.city-packages {
+    padding: 20px;
+}
+
+.packages-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.package-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: calc(33% - 20px); /* Adjust as needed */
+}
+
+.package-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.package-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.package-details {
+    padding: 15px;
+}
+
+.package-details h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.package-details p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.star {
+    font-size: 1.2em;
+    color: #ffd700;
+}
+
+.star.filled {
+    color: #ffd700;
+}
+
+.rating-value {
+    margin-left: 10px;
+    font-size: 1em;
+    color: #555;
+}

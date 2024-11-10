@@ -1,0 +1,47 @@
+/* src/components/GenericCard.css */
+.generic-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1rem;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.generic-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.generic-card h3 {
+    margin: 1rem 0;
+    font-size: 1.25rem;
+}
+
+.generic-card p {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.generic-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.generic-card button:hover {
+    background-color: #0056b3;
+}
+
+.generic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,18 @@
+/* src/components/SearchFilter.css */
+.search-filter {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.search-filter .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-filter input,
+.search-filter select {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0.5rem;
+}

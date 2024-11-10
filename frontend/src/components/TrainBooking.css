@@ -1,0 +1,161 @@
+/* TrainBooking.css */
+
+.train-booking-container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background: linear-gradient(to bottom, #f0f8ff, #e6f7ff); /* Light gradient background */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+
+.search-section {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-section h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group select, 
+.form-group input[type="date"], 
+.form-group input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-group select:focus, 
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.results-section {
+    flex: 2;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.results-section h3 {
+    color: #007bff;
+    margin-bottom: 20px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.train-results ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.train-results li {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s;
+}
+
+.train-results li:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.train-details {
+    margin-top: 10px;
+}
+
+.class-details {
+    border-top: 1px solid #f0f0f0;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.class-details strong {
+    color: #333;
+}
+
+.book-now-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.book-now-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.no-results, .error {
+    text-align: center;
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.no-results p {
+    margin: 20px;
+    font-size: 18px;
+}
+
+.error {
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .train-booking-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .search-section, .results-section {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+}

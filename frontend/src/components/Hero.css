@@ -1,0 +1,41 @@
+/* src/components/Hero.css */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+}
+.hero-content button {
+    background-color: #ff6200;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-content button:hover {
+    background-color: #e55d00;
+    transform: scale(1.05);
+}
+
+.hero-content button:active {
+    transform: scale(0.95);
+}

@@ -1,0 +1,57 @@
+/* hotelCard.css */
+.hotel-card {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+    background-color: #fff;
+}
+
+.hotel-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hotel-card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.hotel-card-info {
+    padding: 1rem;
+}
+
+.hotel-card-name {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.hotel-card-address {
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.hotel-card-rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating-value {
+    font-size: 1rem;
+    color: #333;
+    margin-right: 0.5rem;
+}
+
+.stars {
+    display: flex;
+}
+
+.star {
+    font-size: 1.2rem;
+    color: gold;
+}
+
+.star.empty {
+    color: #ddd;
+}

@@ -1,0 +1,117 @@
+.about-contact-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-container, 
+.links-container, 
+.social-media-container, 
+.contact-container {
+    width: 80%; /* Adjust width as needed */
+    max-width: 800px; /* Limits the maximum width */
+    margin-bottom: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2, 
+.links-section h2, 
+.social-media-section h2, 
+.contact-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #007bff;
+    text-align: center; /* Center align headings */
+}
+
+.about-section p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.links-section ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /* Center align list items */
+}
+
+.links-section ul li {
+    margin-bottom: 10px;
+}
+
+.links-section ul li a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.links-section ul li a:hover {
+    color: #0056b3;
+}
+
+.social-media-section .social-media-links {
+    display: flex;
+    justify-content: center; /* Center the social media icons */
+    gap: 20px;
+}
+
+.social-media-section .social-media-links a {
+    color: #333;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-media-section .social-media-links a:hover {
+    color: #007bff;
+}
+
+.contact-section .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-section .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #555;
+}
+
+.contact-section .form-group input,
+.contact-section .form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+    width: 100%;
+}
+
+.contact-section .form-group button {
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1em;
+    align-self: center;
+}
+
+.contact-section .form-group button:hover {
+    background-color: #218838;
+}

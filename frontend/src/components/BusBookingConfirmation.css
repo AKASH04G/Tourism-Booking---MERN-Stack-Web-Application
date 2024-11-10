@@ -1,0 +1,45 @@
+/* src/BusBookingConfirmation.css */
+.booking-confirmation-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.bus-details {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}

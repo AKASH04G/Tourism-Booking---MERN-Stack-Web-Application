@@ -1,0 +1,225 @@
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Brand styling */
+.navbar-brand a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+} 
+
+.navbar-brand a:hover {
+    color: #f39c12;
+}
+
+/* Links styling */
+.navbar-links a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #f39c12;
+}
+
+/* Search input styling */
+.navbar-search input {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-color: #f39c12;
+    color: #fff;
+    width: 120px;
+    transition: width 0.4s ease;
+}
+
+.navbar-search input::placeholder {
+    color: #fff;
+}
+
+.navbar-search input:focus {
+    width: 200px;
+    background-color: #e67e22;
+}
+
+/* Profile icon styling */
+.navbar-profile {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Dropdown menu styling */
+.dropdown-menunavbar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #333;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px;
+    min-width: 150px;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.dropdown-menunavbar a {
+    padding: 10px;
+    text-decoration: none;
+    color: hsl(0, 50%, 99%);
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-menunavbar a:last-child {
+    border-bottom: none;
+}
+
+/* Dropdown arrow styling */
+.dropdown-arrow {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-arrow.open {
+    transform: rotate(180deg);
+}
+
+/* Styling for the button */
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+/* Navbar profile dropdown styling */
+.navbar-profile {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Dropdown menu styling */
+.dropdown-menunavbar {
+    display: none; /* Hide by default */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #333;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px;
+    min-width: 150px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Show dropdown menu on hover */
+.navbar-profile:hover .dropdown-menunavbar {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    color:#e67e22;
+}
+
+/* Dropdown arrow styling */
+.dropdown-arrow {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-arrow.open {
+    transform: rotate(180deg);
+}
+/* Responsive navbar adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links a {
+        margin: 10px 0;
+    }
+
+    .navbar-search input {
+        width: 100%;
+    }
+}
+/* Highlight dropdown menu items */
+.dropdown-menunavbar a {
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid #444;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menunavbar a:hover {
+    background-color: #f39c12;
+    color: #333;
+}
+/* Interactive search input */
+.navbar-search input {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-color: #f39c12;
+    color: #fff;
+    width: 120px;
+    transition: width 0.4s ease, background-color 0.4s ease;
+}
+
+.navbar-search input::placeholder {
+    color: #fff;
+}
+
+.navbar-search input:focus {
+    width: 200px;
+    background-color: #e67e22;
+}
+.login-link{
+    text-decoration: none;
+    border-radius :20px;
+    background-color: #e25c27;
+    padding-right: 10px;
+    padding:7px;
+    color:#ddd
+} 

@@ -1,0 +1,121 @@
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.login-form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.login-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.login-form-group input {
+    width: 90%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #FF5733;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.login-button:hover {
+    background-color: #e64e20;
+}
+
+.social-login {
+    margin: 20px 0;
+}
+
+.social-login button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.social-login button img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    
+}
+
+.social-login button.google-btn {
+    border: 1px solid #4285F4;
+    color:#4267B2;
+    font-size: 1.2rem;
+}
+
+.social-login button.facebook-btn {
+    border: 1px solid #4267B2;
+    color: #4267B2;
+    font-size: 1.2rem;
+}
+
+.social-login button.google-btn:hover {
+    background-color: #3379f1;
+    color:#e7e9ed;
+}
+
+.social-login button.facebook-btn:hover {
+    background-color: #4286fc;
+    color:#ddd;
+}
+
+.login-container p {
+    margin-top: 20px;
+    color: #555;
+}
+
+.login-container p a {
+    color: #FF5733;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-container p a:hover {
+    text-decoration: underline;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}

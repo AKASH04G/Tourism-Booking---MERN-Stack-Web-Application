@@ -34,7 +34,7 @@ const BookingConfirmation = () => {
         setPnr(generatedPnr);
 
         try {
-            const response = await fetch('http://localhost:5000/api/train-bookings/book', {
+            const response = await fetch('https://journeytime-backend.onrender.com/api/train-bookings/book', {
                 
                 method: 'POST',
                 headers: {

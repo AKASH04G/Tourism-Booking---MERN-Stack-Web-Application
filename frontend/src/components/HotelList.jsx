@@ -12,7 +12,7 @@ const HotelList = () => {
   useEffect(() => {
     const fetchHotels = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/hotels/'); // Replace with your actual API endpoint
+        const response = await axios.get('https://journeytime-backend.onrender.com/api/hotels/'); // Replace with your actual API endpoint
         setHotels(response.data);
       } catch (err) {
         setError(err.message);

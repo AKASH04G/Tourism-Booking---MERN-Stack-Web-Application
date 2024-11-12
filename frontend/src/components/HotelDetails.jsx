@@ -24,7 +24,7 @@ const HotelDetails = () => {
     useEffect(() => {
         const fetchHotel = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/api/hotels/hotels/${hotelId}`, {
+                const response = await axios.get(`https://journeytime-backend.onrender.com/api/hotels/hotels/${hotelId}`, {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }
@@ -57,7 +57,7 @@ const HotelDetails = () => {
         e.preventDefault();
     
         try {
-            await axios.post('http://localhost:5000/api/hotelbooking/book', {
+            await axios.post('https://journeytime-backend.onrender.com/api/hotelbooking/book', {
                 userId: userId,
                 userName: bookingData.userName,
                 numberOfPersons: bookingData.numberOfPersons,
